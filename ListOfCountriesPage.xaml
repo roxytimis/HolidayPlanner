@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolidayPlanner.ListOfCountriesPage"
+             Title="Countries">
+    
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Image
+            Source="bucharest.jpg"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+            <Button MaximumHeightRequest="50" MaximumWidthRequest="400" VerticalOptions="End" Text = "Add Romania to planner" Clicked = "OnShopListAddedClicked"/>
+            
+            
+            <Image Grid.Column="1"
+            Source="paris.jpg"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+            <Button Grid.Column="1" MaximumHeightRequest="50" MaximumWidthRequest="400" VerticalOptions="End" Text = "Add France to planner" Clicked = "OnShopListAddedClicked"/>
+            
+            <Image Grid.Row="1"
+            Source="rome.jpg"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+            <Button Grid.Row="1" MaximumHeightRequest="50" MaximumWidthRequest="400" VerticalOptions="End" Text = "Add Italy to planner" Clicked = "OnShopListAddedClicked"/>
+            
+            <Image Grid.Column="1" Grid.Row="1"
+            Source="tokyo.jpg"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+            <Button Grid.Column="1" Grid.Row="1" MaximumHeightRequest="50" MaximumWidthRequest="400" VerticalOptions="End" Text = "Add Japan to planner" Clicked = "OnShopListAddedClicked"/>
+
+
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
